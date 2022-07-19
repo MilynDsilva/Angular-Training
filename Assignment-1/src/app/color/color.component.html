@@ -3,6 +3,6 @@
 <input #inputColor type="text" class="color">
 <br>
 <br>
-<button (click)="onClick(inputColor.value)" class="fill-button">Fill</button>
+<button (click)="onClick(inputColor.value.toLowerCase())" class="fill-button">Fill</button> {{message}}
 <br>
 <br>
