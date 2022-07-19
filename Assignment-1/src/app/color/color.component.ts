@@ -12,4 +12,7 @@ export class ColorComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onClick(inputColor: string){
+    console.log(`i was clicked ${inputColor}`)
+  }
 }

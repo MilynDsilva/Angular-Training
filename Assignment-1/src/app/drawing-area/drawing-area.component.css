@@ -1,0 +1,12 @@
+.drawing-area
+{ 
+  width:300px; 
+  height:200px; 
+  line-height:200px;
+  border: 2px solid black;
+  text-align:center;
+  font-size:20px;
+  font-style:normal;
+  color:black;
+  background-color:white;
+}

@@ -1,1 +1,8 @@
-<p>color works!</p>
+<label for="color">Color</label>
+<br>
+<input #inputColor type="text" class="color">
+<br>
+<br>
+<button (click)="onClick(inputColor.value)" class="fill-button">Fill</button>
+<br>
+<br>
