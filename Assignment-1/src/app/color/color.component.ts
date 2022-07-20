@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { DrawingAreaComponent } from '../drawing-area/drawing-area.component';
 
 @Component({
+  providers: [DrawingAreaComponent],
   selector: 'app-color',
   templateUrl: './color.component.html',
   styleUrls: ['./color.component.css']
@@ -8,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class ColorComponent implements OnInit {
   public message = '';
   public availableColors = ["red", "green", "blue"];
-  constructor() { }
+  constructor(private drawingArea: DrawingAreaComponent) { }
 
   ngOnInit(): void {
   }
@@ -24,6 +26,7 @@ export class ColorComponent implements OnInit {
       return;
     }
     console.log(`You entered ${inputColor}`)
+    this.drawingArea.changeColor(inputColor)
     this.message = ''
   }
 }
