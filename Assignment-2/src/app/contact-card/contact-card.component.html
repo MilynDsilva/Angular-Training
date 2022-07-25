@@ -1,0 +1,13 @@
+<div class="parent">
+    <div class="item" *ngFor="let card of cards; let i=index "(click)="cards.splice(i, 1)">
+        <div class="img">
+            <img src="{{card.img}}" alt="image">
+        </div>
+            <h4 class="name">{{card.name}}</h4>
+        +{{card.contactNumber}}
+        <br>    
+        {{card.date}}
+        {{card.time}}
+        {{card.info}}
+    </div>
+</div>
